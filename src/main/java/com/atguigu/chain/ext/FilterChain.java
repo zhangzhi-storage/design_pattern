@@ -7,6 +7,7 @@ import java.util.List;
  * 靠它维护链条
  */
 public class FilterChain implements Filter{
+    //记录当前执行的步骤
     int cursor =0;
     //filter的链
     List<Filter> filtersChain=new ArrayList<>();
